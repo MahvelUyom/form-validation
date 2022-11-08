@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css" media="all">
+  
+  form{
+    border:1x solid;
+    border-radius:8px;
+    background:#fff;
+    padding:20px;
+    width:80%;
+    text-align: center;
+    margin-left:20px;
+    margin-top:50px;
+    box-shadow:1px 1px 5px #000;
+}
+  
+
+
+    input{
+    margin-top:20px;
+    width:90%;
+    height:30px;
+    border-radius:10px;
+    background:whitesmoke;
+    border:0;
+    font-weight:500;
+    padding-left:10px;
+    font-size:18px;
+    box-shadow:2px 2px 5px #000;
+}
+input:hover{
+    border:0;outline:0;
+    background:cornflowerblue;
+    color:#fff;
+    transform:scale(1.1);
+    transition:.3s;
+}
+
+button{
+    margin-top:20px;
+    width:30%;
+    height:30px;
+    border-radius:10px;
+    background:cornflowerblue;
+    color:#fff;
+    margin: 10px;
+    margin-top: 20px;
+    font-size:18px;
+    letter-spacing:2px;
+    border:0;
+    box-shadow:2px 2px 5px #000;
+}
+  </style>
+</head>
+
+<body>
+
+<form name="frm">
+ <h3>Sign Up Form</h3>
+            
+                <input type="text" name="question" placeholder="Enter First Name" required>
+                <br />
+                  
+                   <input type="text" name="question" placeholder="Enter Last Name" required>
+                <br />
+                  
+                   <input type="number" name="question" placeholder=" Phone Number" required>
+                <br />  
+                
+                <input type="text" name="question" placeholder="Country of Origin" required>
+                <br />  
+             
+                <input type="email" placeholder="Email address" name="question" required>
+                <br />  
+                
+                <input type="text" name="question" placeholder="Enter Username" required>
+                <br />
+               
+               
+                <input type="password" name="question" placeholder=" Password" maxlength="8" required>
+                <br />
+                 
+                   <input type="password" name="question" placeholder=" Confirm Password" maxlength="8" required>
+                <br />
+           
+             <button onclick="return Empty();" type="submit">Submit</button>
+                
+                <button type="reset">Reset</button>
+                <br />
+                <br />
+                <a href="index.html">Back to Login</a>
+
+
+
+</form>
+
+
+
+<script>
+
+function Empty() {
+  if (document.forms['frm'].question.value === "") {
+    alert("Some fields are empty!");
+    return false;
+  }
+  return true;
+  
+}
+
+  
+</script>
+</body>
+
+</html>
